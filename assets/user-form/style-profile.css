@@ -1,0 +1,113 @@
+.profile-step p {
+    display: none;
+  }
+  .profile-step h2 {
+    display: none;
+  }
+  
+  .profile-step input {
+    display: none;
+  }
+    .profile-step {
+      display: none;
+    }
+    body {
+      font-family:'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      background-image: url('background.jpg');
+    }
+    
+    #profileBuilder {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    button {
+  padding: 15px 25px;
+  margin-right: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #f1ebd3;
+  color: #000000; /* Set font color to black */
+  border-color: black;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+    
+    button:hover {
+      background-color: #304a66;
+    }
+    
+    #progressBar {
+      width: 100%;
+      display: flex;
+      background: lightgray;
+      height: 15px; /* Decrease the height of the progress bar */
+      border-radius: 8px; /* Adjust the border radius for curved edges */
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    
+    .progress-step {
+      flex-grow: 1;
+      background: lightgray;
+      transition: background-color 0.3s ease;
+      height: 100%; /* Make each step fill the height of the progress bar */
+      border-radius: 8px; /* Adjust the border radius for curved edges */
+    }
+    
+
+    
+    .profile-step {
+      display: none;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile-step h2 {
+      margin-top: 0;
+    }
+    
+    .profile-step p {
+      margin-top: 10px;
+    }
+    
+    .profile-step input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    
+    #profileOutput {
+      margin-top: 20px;
+    }
+
+   
+
+#profileOutputContainer {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  #profileOutputContainer h2 {
+    margin-top: 0;
+  }
+  
