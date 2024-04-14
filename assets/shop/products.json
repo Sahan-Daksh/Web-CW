@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Beach Bag from Recycled Billboards",
+        "price": 22.34,
+        "image": "./assets/shop/image/1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Biodegradable Eco Friendly Phone Case",
+        "price": 20.86,
+        "image": "./assets/shop/image/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Recycled Ocean Plastic Sunglasses",
+        "price": 39.99,
+        "image": "./assets/shop/image/3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Personalised Clear Water Bottle 600ml Made from Recycled Plastic",
+        "price": 13.99,
+        "image": "./assets/shop/image/4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Recycled Newspaper HB Pencils",
+        "price": 8.83,
+        "image": "./assets/shop/image/5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Recycled Newspaper Bowls - Paper Bowls",
+        "price": 10.43,
+        "image": "./assets/shop/image/6.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Recycled Paper Pouch",
+        "price": 11.99,
+        "image": "./assets/shop/image/7.jpg"
+    },
+    {
+        "id": 8,
+        "name":" Retwisst Recycled Chainy Cotton 250gr yarn",
+        "price": 9.99,
+        "image": "./assets/shop/image/8.jpg"
+    }
+
+]
