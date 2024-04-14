@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="./assets/navbar.css">
+    <link rel="stylesheet" href="./assets/feedback-form/style-form.css">
+    <link rel="stylesheet" href="./assets/footer.css">
+    <title>Feedback Form</title>
+    <script src="./assets/feedback-form/query.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./assets/images/logo.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+               <!--<i class="fa fa-times" onclick="hideMenu()"></i>-->
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./content.html">CONTENT</a></li>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./gallery.html">GALLERY</a></li>
+                    <li><a href="./sitemap.html">SITEMAP</a></li>
+                    <li><a href="./profile.html">PROFILE</a></li>
+                    <li><a href="./feedback.html">FEEDBACK</a></li>
+                    <li><a href="./team.html">ABOUT US</a></li>
+                </ul>
+            </div>
+          <!-- <i class="fa fa-bars" onclick="showMenu()"></i>-->
+        </nav>
+        <h1>Feedback Form</h1>
+    </section>
+
+    <h3>Required fields<sup>*</sup></h3>
+    <br>
+    <form name="myform" id="f1">
+
+    <div class="a">
+       <!-- first name input-->
+        <label for="Nameint" ><sup>*</sup>Enter your first name:</label>
+        <input  type="text" Name="firstname" id="fname" placeholder="Enter your first name" size="20" required maxlength="30">
+        <br>
+        <br>
+        <br>
+
+        <!--last name input--> 
+        <label for="Nameint_2" ><sup>*</sup>Enter your last name:</label>
+        <input type="text" name="lastName" id="lname" placeholder="Enter your last name" size="20" required maxlength="30">
+        <br>
+        <br>
+        <br>
+        <!--email input-->
+        &nbsp; &nbsp;&nbsp;<label for="--email"><sup>*</sup>Enter your email:</label>
+        <input type="email" id="email" name="email" size="30" maxlength="60" placeholder="Enter your email adress">
+    
+        <br>
+        <br>
+        <br>
+        <!-- first Web visit checkbox-->
+        
+        <p>Was this your first time Visiting?</p>
+        
+        <!--Yes-->
+        <input type="radio" id="first-visit-yes" name="first-visit" value="yes">
+        <label for="yes">Yes</label>
+        <!--No-->
+        <input type="radio" id="first-visit-no" name="first-visit" value="no">
+        <label for="no">NO</label>
+        <br>
+        <br>
+        <br>
+
+        <!--Informative.. checkbox-->
+        <p>Was this website informative and easy to navigate through?</p>
+
+       <!--Yes-->
+       <input type="radio" id="informative-yes" name="informative" value="yes">
+       <label for="yes_1">Yes</label>
+       <!--No-->
+       <input type="radio" id="informative-no" name="informative" value="no">
+       <label for="no_1">NO</label>
+       <br>
+       <br>
+       <br>
+
+       <!-- suggest improvements sections-->
+      <label for="textarea"><p> <sup>*</sup> if "NO" suggest any improvements for the future:</p></label>
+
+        <textarea id="improvements" name="suggest" rows="4" cols="30" placeholder="Add your message here...">
+
+        </textarea>
+        <br>
+        <br>
+        <br>
+
+        <!--Rating area inst-->
+        <p>How satisfied you with our services?<br>Choose  starting from 0 
+        to 10 with 0 being"Not"satisfied at all" and 10 being "Extreamly satisfied!" </p>
+
+    <!--Rating area labels-->
+    &nbsp;<label for="1">1</label>&nbsp;
+    <label for="2">2</label>&nbsp;
+    <label for="3">3</label>&nbsp;
+    <label for="4">4</label>&nbsp;
+    <label for="5">5</label>&nbsp;
+    <label for="6">6</label>&nbsp;
+    <label for="7">7</label>&nbsp;
+    <label for="8">8</label>&nbsp;
+    <label for="9">9</label>&nbsp;
+    <label for="10">10</label>&nbsp;
+
+    <br>
+
+    <!--rating area inputs-->
+    <input type="radio" name="rate" value="1" id="rate1">
+    <input type="radio" name="rate" value="2" id="rate2">
+    <input type="radio" name="rate" value="3" id="rate3">
+    <input type="radio" name="rate" value="4" id="rate4">
+    <input type="radio" name="rate" value="5" id="rate5">
+    <input type="radio" name="rate" value="6" id="rate6">
+    <input type="radio" name="rate" value="7" id="rate7">
+    <input type="radio" name="rate" value="8" id="rate8">
+    <input type="radio" name="rate" value="9" id="rate9">
+    <input type="radio" name="rate" value="10" id="rate10">
+
+
+    <!--Recomend our web service-->
+        <br>
+        <br>
+        <br>
+
+
+    <p>Would you recomend our web  services?...</p>
+    <!--yes-->
+    <input  type="radio" id="recommend-yes" name="option"  value="Yes" required>
+    <label for="yes_2">Yes</label>
+    <!--No-->
+    <input  type="radio" id="recommend-no" name="option" value="No" required>
+    <label for="no_2">No</label>
+        <br>
+        <br>
+        <br>
+
+    <p>Would you like to receive updates about the website and any offers? </p>
+
+    <select id="updates" name="updates" size="2" >
+        <option value="Yes-via email" selected>Yes-Via email</option>
+        <option value="Yes-SMS" >Yes-SMS</option>
+        <option value="NO-I don't need">NO-I don't need</option>
+
+
+    </select>
+   
+<br>
+<br>
+<br>
+    <label for="request">Do you have any additional questions or requests?</label>
+    <br>
+    <textarea id="request" name="request" placeholder= "Add your message here..." rows="5" cols="30" >
+
+    </textarea>
+    
+<br>
+
+    <input type="button" name="submit" value="Submit" id="submitButton">
+
+    </form>
+    </div>
+
+    <div id="div">
+        <p id="fname"></p>
+        <p id="lname"></p>
+        <p id="email"></p>
+        <p id="firstVisit"></p>
+        <p id="informative"></p>
+        <p id="improvements"></p>
+        <p id="rate"></p>
+        <p id="recommend"></p>
+        <p id="updates"></p>
+        <p id="request"></p>
+        
+        <button type="button" name="submit" id="edit" onclick="edit()">Edit</button>
+        <button type="button" name="submit" id="send" onclick="send()">Send</button>
+    </div>
+    
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="content.html">Content page</a></li>
+                    <li><a href="feedback.html">Feedback form</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="./page-editors/sahan.html">Student-1</a></li>
+                    <li><a href="./page-editors/lakith.html">Student-2</a></li>
+                    <li><a href="./page-editors/ridushan.html">Student-3</a></li>
+                    <li><a href="./page-editors/ishan.html">Student-4</a></li>
+    
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;  2024  <span class="designer">GreenLoop</span></p>
+        </div>
+    </footer>
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./assets/checkout/style-checkout.css">
+    <script src="./assets/checkout/script-checkout.js"></script>
+    <script src="./assets/checkout/validation-checkout.js"></script>
+
+</head>
+<body onload="loadCart();">
+    <div class="bigdiv">
+    <div class="heading-checkout">
+        <h2>Almost There..</h2>
+        <h4>Fill in the details below to complete the purchase</h4>
+    </div>
+    <div class="payment-details">
+        <h2>Payment Details</h2>
+        <h3>Payment Information:</h3>
+        <p></p>
+        <h4>Edit Payment</h4>
+        <form>
+            <div id="formone">
+            <label for="card-num" id="card-number">Card Number :</label><br>
+            <input type="text" id="card-num" name="card-num" required><br>
+            <label for="name" id="card-name"> Cardholder Name :</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="date" id="ex-date">Expiry Date :</label><br>
+            <input type="text" id="date" name="date" placeholder="MM/YY" required><br>
+            <label for="CVV" id="cvvv">CVV :</label><br>
+            <input type="text" id="CVV" name="CVV" required>
+        </div><br>
+            <br>
+            <button class = "clear-data">Clear Fields</button>
+            <button class = "save-data">Save Changes</button>
+            
+        </form>
+        <br>
+    </div>
+    <div class="biling-address">
+        <h2>Billing Address</h2>
+        <h3>Address:</h3>
+        <p></p>
+        <h4>Edit Address</h4>
+        <form>
+            <label for="add-line1" id="adl1">Address Line 1 :</label><br>
+            <input type="text" id="add-line1" name="add-line1" required><br>
+            <label for="add-line2" id="adl2">Address Line 2 :</label><br>
+            <input type="text" id="add-line2" name="add-line2"><br>
+            <label for="add-line3" id="adl3">Address Line 3 :</label><br>
+            <input type="text" id="add-line3" name="add-line3"><br>
+            <label for="town" id="twn">Town/City :</label><br>
+            <input type="text" id="town" name="town" required><br>
+            <label for="region" id="stc">State/County :</label><br>
+            <input type="text" id="region" name="region"><br>
+            <!-- <label for="zip" id="zip">Postcode/Zip code :</label><br> -->
+            <input type="text" id="zipc" name="zipcode" required><br>
+            <select name="country" id="country">
+            <option value="lk">Sri Lanka</option>
+            <option value="in">India</option>
+            <option value="pk">Pakistan</option>
+            <option value=" bg">Bangladesh</option>
+            <option value="np">Nepal</option>
+            </select><br>
+            <br>
+            <button class = "clear-data">Clear Fields</button>
+            <button class = "save-data">Save Changes</button>
+        </form>
+        <br>
+    </div>
+    <div class="payment-details">
+        <h2>Contact Details</h2>
+        <h3>Contact Details:</h3>
+        <p></p>
+        <h4>Edit Contact Details</h4>
+        <form>
+            <div id="all">
+            <label for="fname" id="fn">First Name :</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname" id="ln">Last Name :</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="phone_no" id="pn">Phone Number :</label><br>
+            <input type="text" id="phone_no" name="phone_no" required><br>
+            <label for="email" id="eml">Email :</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+            <br>
+            <br>
+            <button class = "clear-data">Clear Fields</button>
+            <button class = "save-data">Save Changes</button>
+        </form>
+        <br>
+    </div>
+    <!-- <div class="order-summary">
+        <h2>Order Summary</h2>
+        <h3>Reference</h3>
+        <h3>Order Items</h3><hr>
+        <div class="checkout-cart">
+            
+        </div>
+        <p id = "checkout-total"></p>
+        <button id="checkout-button">Checkout</button>
+        
+    </div> -->
+
+    <div class="right-box">
+        <div class="order-summary">
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+                <div class="item">
+                    <div class="image">
+                        <img src="./assets/shop/image/1.jpg" alt="img-1">
+                    </div>
+                    <div class="name">
+                        NAME
+                    </div>
+                    <div class="totalPrice">
+                        $200
+                    </div>     
+                </div>
+            </div>
+            <div class="listCart">
+                <div class="item">
+                    <div class="cartAmount">Order Total: $0</div>
+                </div>
+                <div class="item">
+                    <button class="checkoutBtn" onclick="validateForm();">Checkout</button> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Footer-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Page editor</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("./bg-page-editors.jpg");
+            background-size: cover;
+            color: #ffffff; /* Purple */
+            margin: 0;
+            padding: 0;
+          }
+
+        .container{
+
+            width: 60vw;
+            height: 135vh;
+            margin: 200px auto;
+            margin-top: 100px;
+
+          }
+
+        .glass{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 40px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+          }
+          
+          h1 {
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+          }
+          
+          hr {
+            border: none;
+            border-top: 2px solid #080808;
+            margin: 10px 0;
+          }
+          
+          p {
+            margin: 5px 0;
+            text-align: center;
+          }
+          
+          h2 {
+            margin: 20px 0 10px;
+            text-align: center;
+          }
+          
+          a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff93d;
+            margin-bottom: 20px;
+          }
+          
+          a:hover {
+            color: #ff69b4; /* Hot Pink */
+          }
+
+            /*footer css here on*/
+            *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color:rgb(46, 42, 42);
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 2;
+}
+.footerBottom{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    color:cyan;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+    </style>
+</head>
+<body>
+  <div class="container glass">
+      <br>
+      <br>
+      <h2>Page Editor</h2>
+      <br>
+
+          <p><b>Name : Lakith Punsara</b></p>
+          <p><b>Role : Student 2</b></p>
+          <p><b>The following pages were edited by me!</b></p>
+          <a href="#bottom"><u>jump to bottom</u></a>   
+
+      <br>
+      <h2>Home page</h2>
+	        <p>"I Created a Home Page using html and CSS. <br>
+	          For the home page I Used an image for background,different fonts<br>
+	          and maintained simple design."</p>
+	        <a href="/index.html"><u>link to Home page</u></a>
+
+      <br>
+      <h2>Navigation bar</h2>
+	        <p> "Added Simple design and logo to nav bar. <br>
+	            Added hover effects to make it more attractive<br>
+	            maintain separate css file to keep same template of nav bar."</p>
+
+	    <br>
+      <br>
+      <h2>Content Page</h2>
+	        <p>"Created a page containing details and images of our theme<br>
+	          described about various topics according to this theme<br>
+	          Used images and CSS to make it nice."</p>
+	        <a href="/content.html"><u>link to Content Page</u></a>
+
+      <br>
+	    <h2>feedback Form</h2>
+	        <p>"For the feedback form I used HTML,CSS and javascript.
+      <br>
+	        I made a preview page to if  the user needs to make any changes.
+      <br>
+	        Finally when the user presses the send button it will go to a pre-setted email.""
+      <br>
+	        </p>
+	        <a href="/feedback.html"><u>link to Feedback form</u></a>
+
+	  <div id="bottom"></div>
+  </div>
+  <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="/index.html">Home</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/content.html">Content page</a></li>
+                <li><a href="/feedback.html">Feedback form</a></li>
+                <li><a href="/team.html">Our Team</a></li>
+                <li><a href="sahan.html">Student-1</a></li>
+                <li><a href="lakith.html">Student-2</a></li>
+                <li><a href="ridushan.html">Student-3</a></li>
+                <li><a href="ishan.html">Student-4</a></li>
+  
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;  2024  <span class="designer">GreenLoop</span></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Profile Builder</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./assets/user-form/style-profile.css">
+    <link rel="stylesheet" href="./assets/navbar.css">
+    <link rel="stylesheet" href="./assets/footer.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <section class="sub-header">
+      <nav>
+          <a href="index.html"><img src="./assets/images/logo.jpg" alt=""></a>
+          <!-- Navigation links -->
+          <div class="nav-links" id="navLinks">
+             <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./content.html">CONTENT</a></li>
+              <li><a href="./shop.html">SHOP</a></li>
+              <li><a href="./gallery.html">GALLERY</a></li>
+              <li><a href="./sitemap.html">SITEMAP</a></li>
+              <li><a href="./profile.html">PROFILE</a></li>
+              <li><a href="./feedback.html">FEEDBACK</a></li>
+              <li><a href="./team.html">ABOUT US</a></li>
+          </ul>
+          </div>
+      </nav>
+    </section>
+      
+    <!-- Profile Builder Section -->
+    <div id="profileBuilder">
+      <h1>Let's build Your Profile</h1>
+      <!-- Buttons for profile building -->
+      <button id="startButton">Start</button>
+      <button onclick="skipStep()">Skip</button>
+      <button onclick="previousStep()">Previous</button>
+      <!-- Profile completion progress -->
+      <div id="profileCompletionText">
+        <p>This is your profile completion progress:</p>
+      </div>
+      <!-- Progress bar -->
+      <div id="progressBar">
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+      <!-- Profile building steps -->
+      <div id="profileSteps">
+        <!-- Step 1 -->
+        <div class="profile-step" data-step="1">
+          <h2>Step 1: Personal Details</h2>
+          <p>Enter your name?</p>
+          <input type="text" id="nameInput" placeholder="Name"/>
+          <p>Enter your email?</p>
+          <input type="email" id="emailInput" placeholder="Email"/>
+          <p>Enter your age?</p>
+          <input type="number" id="ageInput" placeholder="Age"/>
+          <p>Enter your gender?</p>
+          <input type="text" id="genderInput" placeholder="Gender"/>
+        </div>
+        <!-- Step 2 -->
+        <div class="profile-step" data-step="2">
+          <h2>Step 2: Volunteering Tasks</h2>
+          <p>What aspects of responsible consumption and production are you most interested in?</p>
+          <input type="text" id="bringInput" placeholder="Your area of interests "/>
+          <p>Are there any specific sustainability topics or issues you're passionate about? </p>
+          <input type="text" id="howInput" placeholder="Issues that your are passionate about" />
+          <button onclick="nextStep(2)">Next</button>
+        </div>
+        <!-- Step 3 -->
+        <div class="profile-step" data-step="3">
+          <h2>Step 3: Goals and Challenges</h2>
+          <p>What sustainability goals are you striving to achieve?</p>
+          <input type="text" id="fieldInput" placeholder="Your goals "/>
+          <p>Have you shared any insights or comments with us in the past?</p>
+          <input type="text" id="degreeInput" placeholder="Have you shared any insights or comments with us in the past?"/>
+          <p>What's your profession or field of interest? (We're curious to know how sustainability fits into your life!)</p>
+          <input type="text" id="profInput"placeholder="Your profession"/>
+          <p>How many people are in your household? (Understanding your household size helps us offer tailored tips for sustainable living.)</p>
+          <input type="text" id="houseInput" placeholder="Number of people in your household"/>
+          <button onclick="nextStep(3)">Next</button>
+        </div>
+        <!-- Step 4 -->
+        <div class="profile-step" data-step="4">
+          <h2>Step 4: Availability and Contact</h2>
+          <p>Would you like to receive any updates?</p>
+          <input type="updates" id="updatesInput" placeholder="Would you like to receive any updates?" />
+          <p>Enter your telephone number?</p>
+          <input type="mob" id="mobInput" placeholder="Mobile number"/>
+          <button onclick="nextStep(4)">Next</button>
+        </div>
+        <!-- Complete Profile Button -->
+        <button onclick="completeProfile()">Complete Profile</button>
+      </div>
+      <!-- Profile Output Container -->
+      <div id="profileOutputContainer">
+        <h2>Profile Output</h2>
+        <div id="profileOutput"></div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footerContainer">
+          <!-- Social Icons -->
+          <div class="socialIcons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <!-- Footer Navigation -->
+          <div class="footerNav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="content.html">Content page</a></li>
+                <li><a href="feedback.html">Feedback form</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="./page-editors/sahan.html">Student-1</a></li>
+                <li><a href="./page-editors/lakith.html">Student-2</a></li>
+                <li><a href="./page-editors/ridushan.html">Student-3</a></li>
+                <li><a href="./page-editors/ishan.html">Student-4</a></li>
+              </ul>
+          </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footerBottom">
+          <p>Copyright &copy;  2024  <span class="designer">GreenLoop</span></p>
+      </div>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="./assets/user-form/script-profile.js"></script>
+  </body>
+</html>
+

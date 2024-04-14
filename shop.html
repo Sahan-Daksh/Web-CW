@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/navbar.css">
+    <link rel="stylesheet" href="./assets/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="./assets/shop/style-shop.css">
+</head>
+<body class="">
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./assets/images/logo.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./content.html">CONTENT</a></li>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./gallery.html">GALLERY</a></li>
+                    <li><a href="./sitemap.html">SITEMAP</a></li>
+                    <li><a href="./profile.html">PROFILE</a></li>
+                    <li><a href="./feedback.html">FEEDBACK</a></li>
+                    <li><a href="./team.html">ABOUT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Marketplace</h1>
+    </section>
+
+    <div class="container">
+        <header>
+            <div class="title">PRODUCT LIST</div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </header>
+
+        <div class="listProduct">
+        </div>
+        
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img alt="product-image" src="./assets/shop/image/0.jpg">
+                </div>
+                <div class="name">
+                    NAME
+                </div>
+                <div class="totalPrice">
+                    $200
+                </div>
+                <div class="quantity">
+                    <span class="minus">&lt;</span>
+                    <span>1</span>
+                    <span class="plus">></span>
+                </div>
+            </div>
+        </div>
+        <div class="cartAmount">Total Price: $0</div>
+        <div class="btn">
+            <button class="clearCart">Clear Cart</button>
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut" onclick="window.location.href = 'checkout.html';">Check Out</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>  
+            <div class="footerNav">
+                <ul><li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="content.html">Content page</a></li>
+                    <li><a href="feedback.html">Feedback form</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="./page-editors/sahan.html">Student-1</a></li>
+                    <li><a href="./page-editors/lakith.html">Student-2</a></li>
+                    <li><a href="./page-editors/ridushan.html">Student-3</a></li>
+                    <li><a href="./page-editors/ishan.html">Student-4</a></li>
+    
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;  2024  <span class="designer">GreenLoop</span></p>
+        </div>
+    </footer>
+
+    <script src="./assets/shop/script-shop.js"></script>
+</body>
+</html>

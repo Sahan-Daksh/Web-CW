@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+h3{
+    text-align: center;
+    color: rgb(188, 22, 22);
+}
+
+div{
+    text-align: center;
+    color: rgb(1, 3, 14);
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}#request,textarea{
+    color: rgb(4, 4, 14);
+    background-color: rgb(211, 238, 229);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}#update{
+    color: rgb(211, 238, 229);
+
+}#Nameint,#Nameint_2,#email{
+    background-color: rgb(211, 238, 229);
+    border-color: rgb(5, 5, 5);  
+}
+
+#div {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 22px;
+    border-radius: 10px;
+    border: 1px soid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    width: 800px;
+    margin: 50px auto 0px auto;
+    text-align: center;
+}
+
+#div {
+    display: none;
+}

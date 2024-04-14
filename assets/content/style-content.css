@@ -1,0 +1,29 @@
+.about-us{
+    width: 80%;
+    margin :auto;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 20px 2px;
+}
+.about-col img{
+    width: 70%;
+    padding-left: 50px;
+}
+.about-col h1{
+    padding-top: 0;
+    color:black;
+    text-align: left;
+    
+}
+.about-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
